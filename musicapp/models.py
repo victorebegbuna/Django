@@ -4,8 +4,8 @@ from datetime import datetime
 # Create your models here.
 
 class Artise(models.Model):
-    first_name = models.CharField(_max_lenght=40)
-    last_name = models.CharField(_max_lenght=40)
+    first_name = models.CharField(max_lenght=40)
+    last_name = models.CharField(max_lenght=40)
     age = models.IntegerField()
 
     def __str__(self):
